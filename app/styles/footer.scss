@@ -1,0 +1,39 @@
+footer {
+	min-height: 132px;
+	background-color:  #e3e3e3;
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 992px) {
+		&{
+			padding: 25px 0 15px;
+		}
+	}
+	.col-lg-12 {
+		display: flex;
+		justify-content: center;
+		@media screen and (max-width: 992px) {
+			&{
+				flex-direction: column;
+			}
+		}
+	}
+	a {
+		font-size: 16px;
+		line-height: 1.63;
+		color: #848484;
+		margin-right: 50px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			text-decoration: none;
+			color: darken(#848484, 40%);
+		}
+		@media screen and (max-width: 992px) {
+			&{
+				text-align: center;
+				margin: 0 0 10px;
+			}
+		}
+	}
+}

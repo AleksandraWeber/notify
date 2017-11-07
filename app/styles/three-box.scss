@@ -1,0 +1,44 @@
+@import 'variables';
+
+.three-box {
+	min-height: 335px;
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 992px) {
+		&{
+			margin-top: 25px;
+		}
+	}
+	i {
+		font-size: 43px;
+		color: #ffffff;
+		width: 98px;
+		height: 98px;
+		border-radius: 50%;
+		background-color: $primary-color;
+		text-align: center;
+		line-height: 98px;
+		margin: 0 auto 31px;
+		display: block;
+	}
+	h3 {
+		@extend .fontReleway;
+		font-size: 22px;
+		color: #222222;
+		margin-bottom: 29px;
+		display: block;
+		text-align: center;
+	}
+	p {
+		font-size: 16px;
+		line-height: 1.63;
+		color: #848484;
+		text-align: center;
+		@media screen and (max-width: 992px) {
+			&{
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+}

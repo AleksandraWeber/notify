@@ -1,0 +1,90 @@
+@import "variables";
+
+.video-section {
+	min-height: 427px;
+	background-color: #e3e3e3;
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 992px) {
+		&{
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+	}
+	h4 {
+		@extend .fontReleway;
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 0.82;
+		color: #222222;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 1.63;
+		color: #848484;
+		margin-bottom: 29px;
+	}
+	form {
+		display: flex;
+		@media screen and (max-width: 992px) {
+			&{
+				margin-bottom: 25px;
+				flex-direction: column;
+			}
+		}
+	}
+	input {
+		width: 420px;
+		height: 56px;
+		background-color: #ffffff;
+		border: solid 1px #c8c8c8;
+		border-right: none;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		padding-left: 26px;
+		font-family: 'Open Sans', sans-serif;
+		color: #848484;
+		outline: none;
+		&:placeholder {
+			color: #848484;
+		}
+		@media screen and (max-width: 992px) {
+			&{
+				width: 100%;
+				margin-bottom: 25px;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+			}
+		}
+
+	}
+	button {
+		width: 141px;
+		height: 56px;
+		background-color: $primary-color;
+		border: none;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		@extend .fontReleway;
+		font-size: 22px;
+		color: #ffffff;
+		outline: none;
+		cursor: pointer;
+		transition: all 500ms ease;
+		&:hover {
+			background-color: darken($primary-color, 10%);
+		}
+		@media screen and (max-width: 992px) {
+			&{
+				width: 100%;
+				border-top-left-radius: 15px;
+				border-bottom-left-radius: 15px;
+			}
+		}
+	}
+	iframe {
+		width: 100%;
+		min-height: 307px;
+	}
+}

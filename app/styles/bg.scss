@@ -1,0 +1,60 @@
+@import 'variables';
+
+.background {
+	background: url('/images/bg.jpg') no-repeat center center #ffffff;
+	min-height: 600px;
+	border-top: 10px solid $primary-color;
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	// &:before {
+  //   content: '';
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+	// bottom: 0;
+	// left: 0;
+	// background-image: linear-gradient(to bottom right,$primary-color,#ffffff);
+	// opacity: .5; 
+	// }
+	h1 {
+		font-family: 'Pacifico', cursive;
+		font-size: 60px;
+		line-height: 1;
+		color: #ffffff;
+		margin-bottom: 36px;
+		span {
+			color: $primary-color;
+		}
+	}
+	h2 {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.5;
+		color: #ffffff;
+		margin-bottom: 26px;
+	}
+	img{
+		opacity: 0;
+	}
+	.icons-box {
+		display: flex;
+		i{
+			font-size: 25px;
+			color: #f4f4f4;
+			width: 53px;
+			height: 53px;
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, 0.5);
+			text-align: center;
+			line-height: 53px;
+			transition: all 500ms ease;
+			margin-right: 14px;
+			&:hover {
+				background-color: $primary-color;
+				cursor: pointer;
+			}
+		}
+	}
+}
